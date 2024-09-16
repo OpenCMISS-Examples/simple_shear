@@ -111,8 +111,8 @@ PROGRAM SIMPLESHEAREXAMPLE
   CALL cmfe_OutputSetOn("SimpleShear",Err)
   
   !Get the number of computational nodes and this computational node number
-  CALL cmfe_ComputationalNumberOfNodesGet(NumberOfComputationalNodes,Err)
-  CALL cmfe_ComputationalNodeNumberGet(ComputationalNodeNumber,Err)
+  CALL cmfe_ComputationalNumberOfNodesGet(numberOfComputationalNodes,err)
+  CALL cmfe_ComputationalNodeNumberGet(computationalNodeNumber,err)
 
   NumberGlobalXElements=2
   NumberGlobalYElements=2
